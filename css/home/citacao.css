@@ -1,0 +1,52 @@
+.citacao-container {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 100px;
+  background: var(--cor-1);
+}
+.blockquote-bg {
+  background: var(--cor-2);
+}
+.citacao-container > .blockquote-bg > div > blockquote {
+  font: 400 1.5rem/1.5 'Merriweather', serif;
+  max-width: 50ch;
+  color: var(--cor-4);
+  padding-top: 100px;
+  padding-left: 40px;
+}
+.citacao-container > .blockquote-bg > div > blockquote > .quote {
+  padding-bottom: 15px;
+  display: block;
+  width: 2rem;
+}
+.citacao-container > .blockquote-bg > div > blockquote > address > a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: inherit;
+}
+.link-duvidas {
+  padding: 50px;
+  display: grid;
+  justify-content: center;
+  background: var(--cor-1);
+}
+.link-duvidas > a {
+  font-family: 'Merriweather', serif;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+}
+@media (max-width: 1500px) {
+  .blockquote-bg {
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .citacao-container {
+    padding: 0px;
+  }
+  .citacao-container > .blockquote-bg > div > blockquote {
+    text-align: left;
+    padding: 60px 20px;
+  }
+}

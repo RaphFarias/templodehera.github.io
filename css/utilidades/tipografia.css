@@ -1,0 +1,41 @@
+/* Titulos e Subtitulos */
+.fonte-titulo {
+  font: 300 2.3rem/1.125 'Merriweather', serif;
+}
+.fonte-subtitulo {
+  font: 100 1rem/1.5 'Merriweather sans', sans-serif;
+  padding-top: 10px;
+}
+
+/* Subtitulo cartão-consulta / Experiencia cartão-titulo */
+
+.cartao-titulo {
+  font-family: 'Merriweather Sans', sans-serif;
+  color: var(--cor-4);
+  font-weight: bold;
+}
+.cartao-subtitulo {
+  font-family: 'Merriweather Sans', sans-serif;
+  color: var(--cor-4);
+  font-weight: lighter;
+}
+.fonte-sub3 {
+  color: var(--cor-4);
+  text-align: center;
+  font: 400 1.3rem 'Merriweather', serif;
+}
+.fonte-p-light {
+  color: var(--cor-3);
+  max-width: 50ch;
+  font: 300 1rem/1.5 'Merriweather sans', sans-serif;
+}
+
+/* Estilos */
+.italic {
+  font-style: italic;
+}
+
+/* Posição fonte */
+.font-center {
+  text-align: center;
+}

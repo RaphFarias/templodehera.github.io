@@ -1,0 +1,129 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 170px;
+  padding-right: 170px;
+  border-bottom: .5px solid var(--cor-2);
+  background: var(--cor-1);
+}
+.container img {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.container > nav > ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+  padding-top: 50px;
+}
+.container > nav > ul > li > a {
+  color: var(--cor-4);
+  text-decoration: none;
+  font-family: 'merriweather sans', sans serif;
+}
+.container > nav > ul > li:after {
+  content: url(/img/estrela-nav.svg);
+  position: absolute;
+  padding-left: 50px;
+}
+.container > nav > ul > li:last-child:after {
+  display: none;
+}
+.logo-responsivo {
+  display: none;
+}
+#btn-mobile {
+  display: none;
+}
+@media (max-width: 1150px) {
+  .logo-responsivo {
+    display: block;
+  }
+  .logo {
+    display: none;
+  }
+  .container {
+    padding: 0 2rem;
+    position: relative;
+  }
+  #menu-lista {
+    display: block;
+    position: absolute;
+    padding: 10px 2rem;
+    left: 0px;
+    top: 80px;
+    background: var(--cor-2);
+    width: 100%;
+    height: 0;
+    overflow-y: hidden;
+    visibility: hidden;
+    transition: .5s;
+  }
+  #nav.active #menu-lista {
+    height: max-content;
+    z-index: 100;
+    display: block;
+    overflow-y: auto;
+    visibility: visible;
+  }
+  .container > nav > ul > li:after {
+    display: none;
+  }
+  .container > nav > ul > li:before {
+    content: url(/img/estrela-nav.svg);
+    margin-right: 10px;
+  }
+  .container > nav > ul > li {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: 100%;
+    border-bottom: 1px solid var(--cor-7);
+  }
+  .container > nav > ul > li:last-child {
+    border-bottom: none;
+  }
+  .container > nav > ul > li > a {
+    font-weight: bold;
+  }
+  #btn-mobile {
+    cursor: pointer; 
+    display: flex;
+    position: relative;
+    right: 0px;
+    top: 20px;
+    background: transparent;
+    color: var(--cor-4);
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 10px;
+    border: none;
+    gap: 0.5rem;
+  }
+  #hamburguer {
+    display: block;
+    color:  var(--cor-4);
+    border-top: 2px solid;
+    width: 20px;
+  }
+  #hamburguer::before, #hamburguer::after {
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    display: block;
+    content: '';
+    margin-top: 5px;
+    transition: .3s;
+    position: relative;
+  }
+  #nav.active #hamburguer {
+    border-top-color: transparent;
+  }
+  #nav.active #hamburguer::before{
+    transform: rotate(135deg);
+  }
+  #nav.active #hamburguer::after{
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+}

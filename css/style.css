@@ -1,0 +1,19 @@
+/* Global */
+
+@import './global/global.css';
+@import './global/header.css';
+@import './global/footer.css';
+/* Utilidades */
+@import './utilidades/componentes.css';
+@import './utilidades/tipografia.css';
+@import './utilidades/cores.css';
+/* Home */ 
+@import './home/introducao.css';
+@import './home/conheca.css';
+@import './home/servicos.css';
+@import './home/depoimentos-clientes.css';
+@import './home/citacao.css';
+/* Agendamento */
+@import './agendamento/agendamento.css';
+/* Font-Family */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,700;1,300&family=Merriweather:wght@300;400&display=swap');

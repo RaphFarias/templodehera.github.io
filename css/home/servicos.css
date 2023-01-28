@@ -1,0 +1,118 @@
+body > article#bg {
+  padding-bottom: 200px;
+  padding-left: 0px;
+  padding-right: 0px;
+  background-color: var(--cor-4);
+}
+.servicos-container{
+  padding-top: 60px;
+}
+.cartoes-container{
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  padding-top: 90px;
+}
+.cartao {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  padding: 40px;
+  background-color: white;
+  width: 300px;
+  gap: 20px;
+  position: relative;
+  border-radius: 4px;
+}
+.cartao > ul::before {
+  content: '';
+  width: 250px;
+  height: 1px;
+  left: 60px;
+  background: var(--cor-2);
+  position: absolute;
+}
+.cartao > ul::after {
+  content: '';
+  width: 250px;
+  height: 1px;
+  left: 60px;
+  bottom: 30%;
+  background: var(--cor-2);
+  position: absolute;
+}
+.cartao > ul > li {
+  font-family: 'Merriweather Sans', sans-serif;
+  color: var(--cor-4);
+  font-style: italic;
+  padding-top: 20px;
+  width: 50ch;
+  max-width: 400px;
+}
+.cartao > p > span {
+  font-size: 2.5rem;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-style: italic;
+  color: var(--cor-5);
+}
+.cartao-valor {
+  margin-top: 20px;
+  color: var(--cor-5);
+  font-family: 'Merriweather Sans', sans-serif;
+}
+.cartao > .botao {
+  padding-top: 20px;
+  max-width: max-content;
+  display: flexbox;
+  justify-self: center;
+}
+.botao > a {
+  font-family: 'Merriweather Sans', sans-serif;
+  text-decoration: none;
+  color: var(--cor-4);
+  background: var(--cor-2);
+  width: 15ch;
+  padding: 10px 20px;
+  border: 1px solid var(--cor-4);
+  border-radius: 4px;
+}
+.cartao > .botao > a:hover {
+  background-color: var(--cor-4);
+  color: white;
+  transition: .2s;
+}
+@media (max-width: 1500px) {
+  .cartoes-container{
+    display: flex;
+    justify-content: left;
+    padding-left: 2rem;
+    gap: 40px;
+    padding-bottom: 10px;
+    overflow-x: auto;
+  }
+}
+@media (max-width: 600px) {
+  .servicos-container {
+    padding: 70px 40px !important;
+  }
+  .servicos-container > h2 {
+    font-size: 2rem;
+    text-align: center;
+    padding-left: 20px;
+  }
+  .cartoes-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .cartao {
+    width: 250px;
+  }
+  .cartao > p {
+    width: 250px;
+    justify-self: center;
+  }
+  body > article#bg {
+    padding-bottom: 100px
+  }
+}
