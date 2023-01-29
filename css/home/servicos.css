@@ -82,7 +82,7 @@ body > article#bg {
   transition: .2s;
 }
 @media (max-width: 1500px) {
-  .cartoes-container{
+  .cartoes-container  {
     display: flex;
     justify-content: left;
     padding-left: 2rem;
@@ -93,7 +93,7 @@ body > article#bg {
 }
 @media (max-width: 600px) {
   .servicos-container {
-    padding: 70px 40px !important;
+    padding: 70px 10px !important;
   }
   .servicos-container > h2 {
     font-size: 2rem;
@@ -104,6 +104,7 @@ body > article#bg {
     display: grid;
     grid-template-columns: 1fr;
     gap: 30px;
+    overflow-x: hidden;
   }
   .cartao {
     width: 250px;

@@ -50,4 +50,7 @@
   .divisor-col {
     padding-top: 0;
   }
+  .container-titulo > h2::before {
+    left: 37%;
+  }
 }
